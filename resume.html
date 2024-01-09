@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Resume</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
@@ -14,86 +15,124 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
     <style>
-        * {
-            background-color: rgb(29, 29, 89);
-        }
+        body {
+    margin: 0;
+    font-family: roboto mono;
+    background-color: #080820; /* Dark blue close to midnight */
+    color: #fff; /* White text color */
+  }
+  
+  .navbar {
+    /* background-color: #1e90ff; Light blue navbar background color */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 10px; */
+  }
+  a{
+    text-decoration: none;
+  }
+  .nav-item {
+    color: #6bb5ff; /* Light blue text color */
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 6px
+    ;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .nav-item:hover {
+    background-color: #0f0f4a; /* Slightly darker background on hover */
+    color: #fff; /* White text color on hover */
+  }
+  /* Add these styles to the existing styles.css */
 
-        .navbar {
-            text-align: center;
-            font-family: 'Roboto Mono';
-            font-size: 1.01rem;
-        }
+.resume-content {
+    cursor: default;
+  margin: 2rem;
+  color: #fff; /* White text color */
+}
 
-        .navbar ul {
-            list-style-type: none;
-        }
+.resume-content h1 {
+  margin-bottom: 1rem;
+}
 
-        .navbar a {
-            padding: 12px;
-            border-radius: 6px;
-            text-decoration: none;
-            color: lightblue;
-            transition: all 0.2s ease-in-out;
-        }
+.resume-content h2 {
+  margin-bottom: 0.5rem;
+}
 
-        .navbar a:hover {
-            transform: scale(1.1);
-            background-color: rgb(19, 19, 58);
-            color: white;
-        }
+.resume-content ul {
+  list-style-type: none;
+  padding: 0;
+}
 
-        .navbar li {
-            display: inline;
-            margin-left: 40px;
-            margin-right: 40px;
-        }
-        #info{
-            color: white;
-            margin-top: 4em;
-            margin-left: 32px;
-            font-family: 'Roboto Mono';
-            font-size: 1.2em;
-        }
+.resume-content ul li {
+  margin-bottom: 0.3rem;
+}
+
+.resume-content p {
+  margin: 0.3rem 0;
+}
+
+.resume-content .skills ul,
+.resume-content .interests ul {
+  padding-left: 20px;
+}
+
     </style>
 </head>
-
 <body>
-    <div class="navbar">
-        <ul>
-            <li><a href="portfolio.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="contacts.html">Contact</a></li>
-        </ul>
-    </div>
-    <p id="info">
-    M. Sohaib Ahmad
-    <br><br>
-    Education:
-    - Bachelor of Science in Computer Science <br>
-    University of Agriculture, Faisalabad <br>
-    Expected Graduation: August 2026 <br>
-    Currently in 4th Semester
-    <br><br>
-    - Higher Secondary School Certificate (HSSC) <br>
-    Punjab College Samundri <br>
-    FSc in Pre-Engineering <br>
-    Marks: 856/1100
-    <br><br>
-    Skills: <br>
-    - Web Development: <br>
-    - HTML5 and CSS3 <br>
-    - JavaScript (In Progress) <br>
-    - Graphic Design (Experience from college days) <br>
 
-    - Programming Languages: <br>
-    - C++
-    <br><br>
-    Interests: <br>
-    - Aspiring Full Stack Developer <br>
-    - Continuous learning and skill improvement <br>
-    </p>
+  <div class="navbar">
+    <a href="portfolio.html" class="nav-item">Home</a>
+    <a href="projects.html" class="nav-item">Projects</a>
+    <a href="contacts.html" class="nav-item">Contact</a>
+    <a href="resume.html" class="nav-item">Resume</a>
+  </div>
+
+  <div class="resume-content">
+    <h1>M. Sohaib Ahmad</h1>
+
+    <div class="education">
+      <h2>Education</h2>
+      <ul>
+        <li>Bachelor of Science in Computer Science</li>
+        <p>University of Agriculture, Faisalabad</p>
+        <p>Expected Graduation: August 2026</p>
+        <p>Currently in 4th Semester</p>
+      </ul>
+      
+      <ul>
+        <li>Higher Secondary School Certificate (HSSC)</li>
+        <p>Punjab College Samundri</p>
+        <p>FSc in Pre-Engineering</p>
+        <p>Marks: 856/1100</p>
+      </ul>
+    </div>
+
+    <div class="skills">
+      <h2>Skills</h2>
+      <p>Web Development:</p>
+      <ul>
+        <li>HTML5 and CSS3</li>
+        <li>JavaScript (In Progress)</li>
+        <li>Graphic Design (Experience from college days)</li>
+      </ul>
+
+      <p>Programming Languages:</p>
+      <ul>
+        <li>C++</li>
+      </ul>
+    </div>
+
+    <div class="interests">
+      <h2>Interests</h2>
+      <ul>
+        <li>Aspiring Full Stack Developer</li>
+        <li>Continuous learning and skill improvement</li>
+      </ul>
+    </div>
+  </div>
 
 </body>
-
 </html>
