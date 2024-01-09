@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <title>Portfolio - Projects</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
@@ -14,68 +15,67 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
     <style>
-        * {
-            background-color: rgb(29, 29, 89);
+        body {
+            margin: 0;
+            font-family: roboto mono;
+            background-color: #080820;
+            /* Dark blue close to midnight */
+            color: #fff;
+            /* White text color */
         }
 
         .navbar {
-            margin-bottom: 2rem;
-            text-align: center;
-            font-family: 'Roboto Mono';
-            font-size: 1.01rem;
+            /* background-color: #1e90ff; Light blue navbar background color */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /* padding: 10px; */
         }
 
-        .navbar ul {
-            list-style-type: none;
+        a {
+            text-decoration: none;
         }
 
-        .navbar a {
+        .nav-item {
+            color: #6bb5ff;
+            /* Light blue text color */
+            cursor: pointer;
             padding: 12px;
             border-radius: 6px;
-            text-decoration: none;
-            color: lightblue;
-            transition: all 0.2s ease-in-out;
+            transition: background-color 0.3s, color 0.3s;
         }
 
-        .navbar a:hover {
-            transform: scale(1.1);
-            background-color: rgb(19, 19, 58);
-            color: white;
+        .nav-item:hover {
+            background-color: #0f0f4a;
+            /* Slightly darker background on hover */
+            color: #fff;
+            /* White text color on hover */
         }
 
-        .navbar li {
-            display: inline;
-            margin-left: 40px;
-            margin-right: 40px;
-        }
+        /* Add these styles to the existing styles.css */
 
-        h2 {
-            font-family: Calibri, 'Trebuchet MS', sans-serif;
-            display: inline-block;
-            font-size: 3rem;
-            margin-left: 35rem;
-            color: white;
-            cursor: default;
-            transition: all 0.2s ease;
-        }
-        h2:hover{
-            transform: scale(1.2);
+        .project-title {
+            text-align: center;
+            margin-top: 2rem;
+            color: #fff;
+            /* White text color */
         }
     </style>
 </head>
 
 <body>
+
     <div class="navbar">
-        <ul>
-            <li><a href="portfolio.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="contacts.html">Contact</a></li>
-        </ul>
+        <a href="portfolio.html" class="nav-item">Home</a>
+        <a href="projects.html" class="nav-item">Projects</a>
+        <a href="contacts.html" class="nav-item">Contact</a>
+        <a href="resume.html" class="nav-item">Resume</a>
+    </div>
+
+    <div class="project-title">
+        <h1>Project 1</h1>
     </div>
     <div>
-        <h2>Project 1</h2>
-        <!-- This code is according to the project given in the video to make a website for students -->
         <!DOCTYPE html>
         <html lang="en">
 
@@ -177,7 +177,9 @@
 
         </html>
     </div>
-    <div id="signup"></div>
+
+    <!-- Content for Project 1 goes here -->
+
 </body>
 
 </html>
